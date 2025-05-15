@@ -174,9 +174,9 @@ for i in range(num_records):
 # Create DataFrame
 df = pd.DataFrame(data)
 
-# Save to Excel file
-output_file = os.path.join('data', 'dog_days_sales_data.xlsx')
-df.to_excel(output_file, index=False)
+# Save to CSV file
+output_file = os.path.join('data', 'dog_days_sales_data.csv')
+df.to_csv(output_file, index=False, encoding='utf-8-sig')
 
 print(f"Mock data generated and saved to {output_file}")
 print(f"Generated {num_records} sales records")

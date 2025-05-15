@@ -35,7 +35,7 @@ dog-days/
 1. **Clone the repository**:
    ```
    git clone <repository-url>
-   cd dog-days
+   cd dogdays-internal-dashboard
    ```
 
 2. **Create a virtual environment** (optional but recommended):
@@ -49,13 +49,50 @@ dog-days/
    pip install -r requirements.txt
    ```
 
-4. **Run the application**:
+4. **Run the application locally**:
    ```
    streamlit run src/app.py
    ```
 
 5. **Access the dashboard**:
    Open your web browser and navigate to `http://localhost:8501`
+
+## Deployment Instructions
+
+### GitHub Deployment
+
+1. **Create a new GitHub repository**:
+   - Go to GitHub and create a new repository
+   - Initialize it with a README if you haven't already created one
+
+2. **Push your code to GitHub**:
+   ```
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/yourusername/dogdays-internal-dashboard.git
+   git push -u origin main
+   ```
+
+### Streamlit Cloud Deployment
+
+1. **Sign up for Streamlit Cloud**:
+   - Go to [Streamlit Cloud](https://streamlit.io/cloud) and sign up or log in
+   - Connect your GitHub account if you haven't already
+
+2. **Deploy your app**:
+   - Click "New app"
+   - Select your repository, branch (main), and the main file path (`src/app.py`)
+   - Click "Deploy"
+
+3. **Configure your app** (optional):
+   - Set up secrets if needed
+   - Adjust advanced settings like Python version or package dependencies
+
+4. **Access your deployed app**:
+   - Once deployed, Streamlit Cloud will provide a URL to access your dashboard
+   - Share this URL with your team or stakeholders
 
 ## Data Sources
 
